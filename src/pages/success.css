@@ -1,0 +1,11 @@
+.booking--header{
+  min-height: 400px;
+  height: 100%;
+  max-height: 400px;
+  width: 100vw;
+  display: grid;
+  grid-template-rows:auto;
+  place-items: end;
+  background: url("../../public/banner.jpg") no-repeat center/cover;
+  background-position: bottom;
+}

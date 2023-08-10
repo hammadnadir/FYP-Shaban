@@ -1,0 +1,89 @@
+.root{
+  overflow-x: hidden;
+}
+.booking--header{
+  min-height: 400px;
+  height: 100%;
+  max-height: 400px;
+  width: 100vw;
+  display: grid;
+  grid-template-rows:auto;
+  place-items: end;
+  background: url("../../../public/banner.jpg") no-repeat center/cover;
+}
+
+.trip__card{
+  min-height: 200px;
+  max-height: 500px;
+  margin-bottom: -50px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0 0 0 / 0.1);
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%,-50%);
+  z-index: 999;
+  overflow-y: scroll;
+}
+.trip__title{
+  font-size: 0.8rem;
+  width: max-content;
+  background-color:hsl(199, 100%, 33%);
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-align: center;
+  /* vertical-align: middle; */
+  width: 120px;
+  border-radius: 25px;
+}
+.trip__details{
+  display : grid;
+  grid-template-columns: repeat(2,1fr);
+  place-items: center;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+.trip__from{
+  width: 100%;
+  /* border-right: 2px solid gray; */
+}
+
+.trip__way{
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(0  0 0 / 0.7 );
+}
+.from__city{
+  color: black;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 1210px) {
+  .trip__card{
+    width: 800px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .trip__card{
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .trip__details{
+    grid-template-columns: repeat(2,0.8fr);
+  }
+  .from__city{
+    font-size: 16px;
+  }
+}

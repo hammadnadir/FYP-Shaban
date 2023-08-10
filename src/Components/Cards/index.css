@@ -1,0 +1,29 @@
+.react-date-picker__calendar {
+  font-size: 18px !important;
+}
+
+.searchOptions {
+  position: absolute;
+  background: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  bottom: -0.7rem;
+  -webkit-column-gap: .8rem;
+  column-gap: .8rem;
+  padding: 5px 1rem;
+  border-radius: 3rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: white!important;
+}
+
+@media screen and (max-width: 1200px) {
+  .items{
+    display: unset!important;
+  }
+}
